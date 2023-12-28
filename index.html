@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque Messejana Delivery</title>
+</head>
+
+<body style="font-family: monospace;">
+    <div id="infoDiv"></div>
+
+    <script>
+        var estoque = [
+            { tipo: 'tradicional', sabor: 'Uva', quantidade: 1 },
+            { tipo: 'fruta', sabor: 'Manga', quantidade: 2 },
+            { tipo: 'fruta', sabor: 'Abacate', quantidade: 3 },
+            { tipo: 'tradicional', sabor: 'Maçã', quantidade: 4 },
+            { tipo: 'fruta', sabor: 'Banana', quantidade: 5 }
+        ];
+
+        estoque.sort((a, b) => (a.tipo > b.tipo) ? 1 : (a.tipo === b.tipo) ? ((a.sabor > b.sabor) ? 1 : -1) : -1);
+
+        function showValues() {
+            var infoDiv = document.getElementById('infoDiv');
+
+            for (var i = 0; i < estoque.length; i++) {
+                if (estoque[i].quantidade > 0) {
+                    var divContent = `<p>Tipo: ${estoque[i].tipo}, Sabor: ${estoque[i].sabor}, Quantidade: ${estoque[i].quantidade}</p><hr>`;
+                    infoDiv.innerHTML += divContent;
+                };
+            };
+        };
+
+        window.onload = function () {
+            showValues();
+        };
+    </script>
+</body>
+
+</html>
