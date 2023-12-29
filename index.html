@@ -13,11 +13,9 @@
 
     <script>
         var estoque = [
-            { tipo: 'Tradicional', sabor: 'Uva', quantidade: 1 },
-            { tipo: 'Fruta', sabor: 'Manga', quantidade: 2 },
-            { tipo: 'Fruta', sabor: 'Abacate', quantidade: 3 },
-            { tipo: 'Tradicional', sabor: 'Maçã', quantidade: 4 },
-            { tipo: 'Fruta', sabor: 'Banana', quantidade: 5 }
+            { tipo: 'Tradicional', sabor: 'Uva', quantidade: 9 },
+            { tipo: 'Fruta', sabor: 'Manga', quantidade: 12 },
+            { tipo: 'Fruta', sabor: 'Abacate', quantidade: 14 }
         ];
 
         estoque.sort((a, b) => (a.tipo > b.tipo) ? 1 : (a.tipo === b.tipo) ? ((a.sabor > b.sabor) ? 1 : -1) : -1);
