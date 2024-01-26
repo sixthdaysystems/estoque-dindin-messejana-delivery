@@ -13,28 +13,30 @@
 
     <script>
         var estoque = [
-            { tipo: 'Tradicional', sabor: 'Uva', quantidade: 0 },
-            { tipo: 'Fruta', sabor: 'Manga', quantidade: 17 },
-            { tipo: 'Fruta', sabor: 'Abacate', quantidade: 0 },
-            { tipo: 'Fruta', sabor: 'Castanha', quantidade: 13 },
-            { tipo: 'Tradicional', sabor: 'Leite Condensado', quantidade: 0 },
-            { tipo: 'Fruta', sabor: 'Batata', quantidade: 0 },
-            { tipo: 'Tradicional', sabor: 'Leitinho', quantidade: 0 },
-            { tipo: 'Fruta', sabor: 'Goiaba', quantidade: 20 }
+            { tipo: 'Tradicional', valor: 1.50, sabor: 'Uva', quantidade: 0 },
+            { tipo: 'Fruta', valor: 2, sabor: 'Manga', quantidade: 17 }
         ];
 
         estoque.sort((a, b) => (a.tipo > b.tipo) ? 1 : (a.tipo === b.tipo) ? ((a.sabor > b.sabor) ? 1 : -1) : -1);
 
         function showValues() {
             var infoDiv = document.getElementById('infoDiv');
+            var totalValue = 0;
 
             for (var i = 0; i < estoque.length; i++) {
                 if (estoque[i].quantidade > 0) {
                     var divContent = `<p>Tipo: ${estoque[i].tipo}, Sabor: ${estoque[i].sabor}, Quant: ${estoque[i].quantidade}</p><hr>`;
                     infoDiv.innerHTML += divContent;
-                };
-            };
-        };
+
+                    var valorItem = estoque[i].quantidade * estoque[i].valor;
+                    console.log(`Valor para ${estoque[i].tipo} - ${estoque[i].sabor}: ${valorItem.toFixed(2)}`);
+                    
+                    totalValue += valorItem;
+                }
+            }
+
+            console.log(`Valor total do estoque: ${totalValue.toFixed(2)}`);
+        }
 
         window.onload = function () {
             showValues();
