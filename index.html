@@ -13,8 +13,22 @@
 
     <script>
         var estoque = [
-            { tipo: 'Tradicional', valor: 1.50, sabor: 'Uva', quantidade: 0 },
-            { tipo: 'Fruta', valor: 2, sabor: 'Manga', quantidade: 17 }
+            { tipo: 'Gourmet', valor: 3.50, sabor: 'Leitinho', quantidade: 10 },
+            { tipo: 'Gourmet', valor: 3.50, sabor: 'Maracujá', quantidade: 10 },
+            { tipo: 'Gourmet', valor: 3.50, sabor: 'Morango', quantidade: 10 },
+            { tipo: 'Fruta Grande', valor: 2, sabor: 'Abacate', quantidade: 14 },
+            { tipo: 'Fruta Grande', valor: 2, sabor: 'Goiaba', quantidade: 15 },
+            { tipo: 'Fruta Grande', valor: 2, sabor: 'Manga', quantidade: 17 },
+            { tipo: 'Fruta Grande', valor: 2, sabor: 'Milho Verde', quantidade: 11 },
+            { tipo: 'Fruta', valor: 2, sabor: 'Batata', quantidade: 17 },
+            { tipo: 'Fruta', valor: 2, sabor: 'Coco', quantidade: 15 },
+            { tipo: 'Tradicional', valor: 1.50, sabor: 'Goiaba', quantidade: 16 },
+            { tipo: 'Tradicional', valor: 1.50, sabor: 'Maracujá', quantidade: 11 },
+            { tipo: 'Tradicional', valor: 1.50, sabor: 'Milho Verde', quantidade: 17 },
+            { tipo: 'Tradicional', valor: 1.50, sabor: 'Morango', quantidade: 15 },
+            { tipo: 'Tradicional', valor: 1.50, sabor: 'Uva', quantidade: 9 },
+            { tipo: 'Sorvete', valor: 3, sabor: 'Manga', quantidade: 15 },
+            { tipo: 'Tradicional', valor: 1.50, sabor: 'Morango', quantidade: 7 },
         ];
 
         estoque.sort((a, b) => (a.tipo > b.tipo) ? 1 : (a.tipo === b.tipo) ? ((a.sabor > b.sabor) ? 1 : -1) : -1);
