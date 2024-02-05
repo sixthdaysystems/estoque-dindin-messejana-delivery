@@ -28,7 +28,7 @@
             { tipo: 'Tradicional', valor: 1.50, sabor: 'Tutti-Frutti', quantidade: 18 },
             { tipo: 'Tradicional', valor: 1.50, sabor: 'Uva', quantidade: 8 },
             { tipo: 'Sorvete', valor: 3, sabor: 'Manga', quantidade: 14 },
-            { tipo: 'Tradicional', valor: 1.50, sabor: 'Morango', quantidade: 5 },
+            { tipo: 'Sorvete', valor: 3, sabor: 'Morango', quantidade: 5 },
         ];
 
         estoque.sort((a, b) => (a.tipo > b.tipo) ? 1 : (a.tipo === b.tipo) ? ((a.sabor > b.sabor) ? 1 : -1) : -1);
