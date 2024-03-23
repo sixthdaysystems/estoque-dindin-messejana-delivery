@@ -19,25 +19,25 @@
 
     <script>
         var estoque = [
-            { tipo: 'Grande', valor: 2, sabor: 'Amendoim', quantidade: 10 },
-            { tipo: 'Grande', valor: 2, sabor: 'Castanha', quantidade: 5 },
-            { tipo: 'Grande', valor: 2, sabor: 'Coco', quantidade: 13 },
-            { tipo: 'Tradicional', valor: 1.50, sabor: 'Abacaxi', quantidade: 8 },
-            { tipo: 'Tradicional', valor: 1.50, sabor: 'Chiclete', quantidade: 13 },
-            { tipo: 'Tradicional', valor: 1.50, sabor: 'Chocolate Branco', quantidade: 6 },
-            { tipo: 'Tradicional', valor: 1.50, sabor: 'Creme', quantidade: 8 },
-            { tipo: 'Tradicional', valor: 1.50, sabor: 'Frutas Tropicais', quantidade: 10 },
-            { tipo: 'Tradicional', valor: 1.50, sabor: 'Goiaba', quantidade: 10 },
-            { tipo: 'Tradicional', valor: 1.50, sabor: 'Leite Condensado', quantidade: 2 },
-            { tipo: 'Tradicional', valor: 1.50, sabor: 'Leitinho', quantidade: 8 },
-            { tipo: 'Tradicional', valor: 1.50, sabor: 'Maracujá', quantidade: 9 },
-            { tipo: 'Tradicional', valor: 1.50, sabor: 'Menta', quantidade: 2 },
-            { tipo: 'Tradicional', valor: 1.50, sabor: 'Milho Verde', quantidade: 3 },
-            { tipo: 'Tradicional', valor: 1.50, sabor: 'Morango', quantidade: 11 },
-            { tipo: 'Tradicional', valor: 1.50, sabor: 'Nata', quantidade: 8 },
-            { tipo: 'Tradicional', valor: 1.50, sabor: 'Nescau', quantidade: 8 },
-            { tipo: 'Tradicional', valor: 1.50, sabor: 'Tutti-Frutti', quantidade: 6 },
-            { tipo: 'Tradicional', valor: 1.50, sabor: 'Uva', quantidade: 3 }
+            { tipo: 'Grande', valor: 2, sabor: 'Amendoim', quantidade: 5 },
+            { tipo: 'Grande', valor: 2, sabor: 'Castanha', quantidade: 1 },
+            { tipo: 'Grande', valor: 2, sabor: 'Coco', quantidade: 8 },
+            { tipo: 'Médio', valor: 1.50, sabor: 'Abacaxi', quantidade: 7 },
+            { tipo: 'Médio', valor: 1.50, sabor: 'Chiclete', quantidade: 12 },
+            { tipo: 'Médio', valor: 1.50, sabor: 'Chocolate Branco', quantidade: 5 },
+            { tipo: 'Médio', valor: 1.50, sabor: 'Creme', quantidade: 8 },
+            { tipo: 'Médio', valor: 1.50, sabor: 'Frutas Tropicais', quantidade: 10 },
+            { tipo: 'Médio', valor: 1.50, sabor: 'Goiaba', quantidade: 10 },
+            { tipo: 'Médio', valor: 1.50, sabor: 'Leitinho', quantidade: 8 },
+            { tipo: 'Médio', valor: 1.50, sabor: 'Maracujá', quantidade: 8 },
+            { tipo: 'Médio', valor: 1.50, sabor: 'Milho Verde', quantidade: 2 },
+            { tipo: 'Médio', valor: 1.50, sabor: 'Morango', quantidade: 10 },
+            { tipo: 'Médio', valor: 1.50, sabor: 'Nata', quantidade: 6 },
+            { tipo: 'Médio', valor: 1.50, sabor: 'Nescau', quantidade: 6 },
+            { tipo: 'Médio', valor: 1.50, sabor: 'Tutti-Frutti', quantidade: 5 },
+            { tipo: 'Médio', valor: 1.50, sabor: 'Uva', quantidade: 3 },
+            { tipo: 'Pequeno', valor: 1, sabor: 'Leite Condensado', quantidade: 16 },
+            { tipo: 'Pequeno', valor: 1, sabor: 'Menta', quantidade: 16 }
         ];
 
         estoque.sort((a, b) => (a.tipo > b.tipo) ? 1 : (a.tipo === b.tipo) ? ((a.sabor > b.sabor) ? 1 : -1) : -1);
