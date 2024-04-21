@@ -19,20 +19,21 @@
 
     <script>
         var estoque = [
-            { tipo: 'Grande', valor: 2, sabor: 'Goiaba', quantidade: 6 },
+            { tipo: 'Grande', valor: 2, sabor: 'Goiaba', quantidade: 5 },
             { tipo: 'Médio', valor: 1.50, sabor: 'Chiclete', quantidade: 4 },
             { tipo: 'Médio', valor: 1.50, sabor: 'Goiaba', quantidade: 5 },
             { tipo: 'Médio', valor: 1.50, sabor: 'Morango', quantidade: 6 },
-            { tipo: 'Médio', valor: 1.50, sabor: 'Ovomaltine', quantidade: 3 },
-            { tipo: 'Pequeno', valor: 1, sabor: 'Castanha', quantidade: 23 },
+            { tipo: 'Médio', valor: 1.50, sabor: 'Ovomaltine', quantidade: 2 },
+            { tipo: 'Pequeno', valor: 1, sabor: 'Amendoim', quantidade: 23 },
+            { tipo: 'Pequeno', valor: 1, sabor: 'Brigadeiro', quantidade: 22 },
+            { tipo: 'Pequeno', valor: 1, sabor: 'Castanha', quantidade: 18 },
             { tipo: 'Pequeno', valor: 1, sabor: 'Chocolate Branco', quantidade: 19 },
             { tipo: 'Pequeno', valor: 1, sabor: 'Leite Condensado', quantidade: 6 },
-            { tipo: 'Pequeno', valor: 1, sabor: 'Maracujá', quantidade: 17 },
-            { tipo: 'Pequeno', valor: 1, sabor: 'Menta', quantidade: 3 },
+            { tipo: 'Pequeno', valor: 1, sabor: 'Maracujá', quantidade: 16 },
             { tipo: 'Pequeno', valor: 1, sabor: 'Milho', quantidade: 13 },
             { tipo: 'Pequeno', valor: 1, sabor: 'Torta de Limão', quantidade: 2 },
-            { tipo: 'Pequeno', valor: 1, sabor: 'Tutti-Frutti', quantidade: 17 },
-            { tipo: 'Pequeno', valor: 1, sabor: 'Uva', quantidade: 13 }
+            { tipo: 'Pequeno', valor: 1, sabor: 'Tutti-Frutti', quantidade: 16 },
+            { tipo: 'Pequeno', valor: 1, sabor: 'Uva', quantidade: 12 }
         ];
 
         estoque.sort((a, b) => (a.tipo > b.tipo) ? 1 : (a.tipo === b.tipo) ? ((a.sabor > b.sabor) ? 1 : -1) : -1);
