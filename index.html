@@ -19,20 +19,23 @@
 
     <script>
         var estoque = [
-            { tipo: 'Médio', valor: 1.50, sabor: 'Goiaba', quantidade: 2 },
-            { tipo: 'Médio', valor: 1.50, sabor: 'Morango', quantidade: 2 },
-            { tipo: 'Tradicional', valor: 1, sabor: 'Amendoim', quantidade: 9 },
-            { tipo: 'Tradicional', valor: 1, sabor: 'Brigadeiro', quantidade: 20 },
-            { tipo: 'Tradicional', valor: 1, sabor: 'Castanha', quantidade: 24 },
-            { tipo: 'Tradicional', valor: 1, sabor: 'Chocolate Branco', quantidade: 17 },
-            { tipo: 'Tradicional', valor: 1, sabor: 'Leite Condensado', quantidade: 5 },
-            { tipo: 'Tradicional', valor: 1, sabor: 'Torta de Limão', quantidade: 5 },
-            { tipo: 'Tradicional', valor: 1, sabor: 'Maracujá', quantidade: 12 },
-            { tipo: 'Tradicional', valor: 1, sabor: 'Menta', quantidade: 18 },
-            { tipo: 'Tradicional', valor: 1, sabor: 'Milho', quantidade: 12 },
-            { tipo: 'Tradicional', valor: 1, sabor: 'Ovomaltine', quantidade: 4 },
-            { tipo: 'Tradicional', valor: 1, sabor: 'Tutti-Frutti', quantidade: 13 },
-            { tipo: 'Tradicional', valor: 1, sabor: 'Uva', quantidade: 7 }
+            { tipo: 'Tradicional', valor: 1, sabor: 'Abacate', quantidade: 24 },
+            { tipo: 'Tradicional', valor: 1, sabor: 'Amendoim', quantidade: 2 },
+            { tipo: 'Tradicional', valor: 1, sabor: 'Batata', quantidade: 27 },
+            { tipo: 'Tradicional', valor: 1, sabor: 'Brigadeiro', quantidade: 9 },
+            { tipo: 'Tradicional', valor: 1, sabor: 'Castanha', quantidade: 3 },
+            { tipo: 'Tradicional', valor: 1, sabor: 'Chiclete', quantidade: 18 },
+            { tipo: 'Tradicional', valor: 1, sabor: 'Chocolate Branco', quantidade: 8 },
+            { tipo: 'Tradicional', valor: 1, sabor: 'Goiaba', quantidade: 19 },
+            { tipo: 'Tradicional', valor: 1, sabor: 'Leitinho', quantidade: 18 },
+            { tipo: 'Tradicional', valor: 1, sabor: 'Torta de Limão', quantidade: 17 },
+            { tipo: 'Tradicional', valor: 1, sabor: 'Maracujá', quantidade: 18 },
+            { tipo: 'Tradicional', valor: 1, sabor: 'Menta', quantidade: 3 },
+            { tipo: 'Tradicional', valor: 1, sabor: 'Milho', quantidade: 9 },
+            { tipo: 'Tradicional', valor: 1, sabor: 'Morango', quantidade: 17 },
+            { tipo: 'Tradicional', valor: 1, sabor: 'Ovomaltine', quantidade: 13 },
+            { tipo: 'Tradicional', valor: 1, sabor: 'Tutti-Frutti', quantidade: 11 },
+            { tipo: 'Tradicional', valor: 1, sabor: 'Uva', quantidade: 3 }
         ];
 
         estoque.sort((a, b) => (a.tipo > b.tipo) ? 1 : (a.tipo === b.tipo) ? ((a.sabor > b.sabor) ? 1 : -1) : -1);
